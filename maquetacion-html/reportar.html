@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Incidente - Help Desk</title>
+</head>
+<body>
+    <header>
+        <img src="assets/img/UTM.png" alt="Logo Universidad Técnica de Manabí" width="150">
+        <h1>Sistema Help Desk — Data Center</h1>
+        <p>Universidad Técnica de Manabí</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar Incidente</a></li>
+            <li><a href="tickets.html">Ver Tickets</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Reportar Nuevo Incidente</h2>
+        <p>Complete el formulario a continuación para registrar un incidente técnico. Todos los campos marcados son obligatorios. Un técnico será asignado una vez procesada la solicitud.</p>
+
+        <form>
+            <fieldset>
+                <legend>Datos del Incidente</legend>
+                
+                <label for="titulo">Título del incidente</label><br>
+                <input type="text" id="titulo" name="titulo" required><br><br>
+
+                <label for="categoria">Categoría</label><br>
+                <select id="categoria" name="categoria" required>
+                    <option value="">-- Seleccione una categoría --</option>
+                    <option value="red">Red</option>
+                    <option value="hardware">Hardware</option>
+                    <option value="software">Software</option>
+                </select><br><br>
+
+                <fieldset>
+                    <legend>Prioridad</legend>
+                    <input type="radio" id="alta" name="prioridad" value="alta" required>
+                    <label for="alta">Alta</label><br>
+
+                    <input type="radio" id="media" name="prioridad" value="media">
+                    <label for="media">Media</label><br>
+
+                    <input type="radio" id="baja" name="prioridad" value="baja">
+                    <label for="baja">Baja</label><br>
+                </fieldset>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Universidad Técnica de Manabí - Data Center</p>
+    </footer>
+</body>
+</html>

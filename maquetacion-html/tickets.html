@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta y visualización de tickets - Help Desk</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        thead {
+            background-color: #2e7d32; /* franja verde */
+            color: white;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/img/UTM.png" alt="Logo Universidad Técnica de Manabí" width="150">
+        <h1>Sistema Help Desk — Data Center</h1>
+        <p>Universidad Técnica de Manabí</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar Incidente</a></li>
+            <li><a href="tickets.html">Ver Tickets</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Tickets Registrados</h2>
+        <p>Registro de incidentes técnicos — Data Center UTM</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Ticket</th>
+                    <th>Título</th>
+                    <th>Categoría</th>
+                    <th>Prioridad</th>
+                    <th>Estado</th>
+                    <th>Técnico asignado</th>
+                    <th>Fecha de creación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TK-001</td>
+                    <td>Fallo en switch de distribución piso 2</td>
+                    <td>Red</td>
+                    <td>Alta</td>
+                    <td>En progreso</td>
+                    <td>Carlos Mendoza</td>
+                    <td>2026-05-20</td>
+                </tr>
+                <tr>
+                    <td>TK-002</td>
+                    <td>Disco duro degradado en servidor de respaldo</td>
+                    <td>Hardware</td>
+                    <td>Alta</td>
+                    <td>Abierto</td>
+                    <td>María Fernández</td>
+                    <td>2026-05-21</td>
+                </tr>
+                <tr>
+                    <td>TK-003</td>
+                    <td>Servicio de directorio activo no responde</td>
+                    <td>Software</td>
+                    <td>Media</td>
+                    <td>Resuelto</td>
+                    <td>Luis Zambrano</td>
+                    <td>2026-05-22</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Total de tickets registrados: 3</p>
+
+        <section>
+            <h3>Descripción de Estados</h3>
+            <p><strong>Abierto</strong><br>
+            El incidente ha sido registrado y está pendiente de asignación o atención por parte del equipo técnico.</p>
+
+            <p><strong>En progreso</strong><br>
+            Un técnico ha sido asignado y se encuentra trabajando activamente en la resolución del incidente.</p>
+
+            <p><strong>Resuelto</strong><br>
+            El incidente fue atendido satisfactoriamente y el servicio afectado fue restaurado o la solicitud completada.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Universidad Técnica de Manabí - Data Center</p>
+    </footer>
+</body>
+</html>
